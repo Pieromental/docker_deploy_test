@@ -26,6 +26,7 @@ jobs:
     - name : Build Docker Image
       run: | 
         docker build -t pieromental/graphql-action:0.02 .
+        docker build -t pieromental/graphql-action:latest .
     - name : Push Docker Image
       run: | 
         docker push pieromental/graphql-action:0.02 
